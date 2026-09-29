@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #2b303a;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* subtle custom scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #f4f5f6; }
+::-webkit-scrollbar-thumb { background: #deb96b; border-radius: 4px; }
+
+.container-max {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-gold-600 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/70 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-charcoal-300 px-6 py-3 text-sm font-semibold text-charcoal-700 transition hover:border-gold-500 hover:text-gold-600;
+}
+
+.section-title {
+  @apply font-serif text-3xl md:text-4xl font-semibold text-charcoal-800;
+}
+
+.section-eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold-600;
+}
+
+.card {
+  @apply rounded-2xl bg-white shadow-sm ring-1 ring-charcoal-100 transition hover:shadow-lg;
+}
+
+.input-field {
+  @apply w-full rounded-lg border border-charcoal-200 px-4 py-2.5 text-sm text-charcoal-800 placeholder:text-charcoal-400 focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-200;
+}
+
+.label-field {
+  @apply mb-1.5 block text-sm font-medium text-charcoal-700;
+}
