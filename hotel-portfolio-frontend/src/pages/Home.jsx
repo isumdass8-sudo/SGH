@@ -74,7 +74,7 @@ export default function Home() {
         <div className="container-max relative z-10 text-center text-white animate-slideUp">
           <p className="section-eyebrow text-gold-300">{contactInfo?.city ? `${contactInfo.city}, ${contactInfo.country}` : 'Kandy, Sri Lanka'}</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-tight md:text-6xl">
-            {contactInfo?.hotel_name || 'Serenity Grand Hotel'}
+            {contactInfo?.hotel_name || 'Mount Aureliya Homestay'}
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/90">
             {contactInfo?.tagline || 'Where Comfort Meets Elegance'}

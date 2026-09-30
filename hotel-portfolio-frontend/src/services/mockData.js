@@ -6,25 +6,26 @@ import galleryPhoto2 from '../assets/2.jpeg';
 import galleryPhoto3 from '../assets/3.jpeg';
 import roomOneImage from '../assets/om 1.jpeg';
 import roomTwoImage from '../assets/om 2.jpeg';
+import roomThreeImage from '../assets/om 3.jpeg';
 
 export const seedData = {
   contactInfo: {
     id: 1,
-    hotel_name: 'Serenity Grand Hotel',
+    hotel_name: 'Mount Aureliya Homestay',
     tagline: 'Where Comfort Meets Elegance',
-    address: '124 Ocean Drive',
+    address: 'Mrs Eloma Kleyn, 408/8, “Mount Pleasant garden 1”, Herassagalla road, Bowellawath, Kandy',
     city: 'Kandy',
     country: 'Sri Lanka',
-    phone: '+94 31 222 3344',
-    email: 'reservations@serenitygrand.com',
-    website: 'www.serenitygrand.com',
+    phone: '+94 742 026 564 / +94 776 909 351',
+    email: 'reservations@mountaureliya.com',
+    website: 'www.mountaureliya.com',
     facebook_url: 'https://facebook.com',
     instagram_url: 'https://instagram.com',
-    latitude: 7.2094,
-    longitude: 79.8380,
+    latitude: 7.2906,
+    longitude: 80.6337,
     check_in_time: '2:00 PM',
     check_out_time: '11:00 AM',
-    distance_airport: '15 minutes from Bandaranaike Int. Airport'
+    distance_airport: 'Approx. 3 hours from Bandaranaike International Airport, depending on traffic.'
   },
 
   rooms: [
@@ -39,6 +40,12 @@ export const seedData = {
       max_guests: 2, bed_type: 'King Bed', room_size: '36 sqm', room_view: 'Pool View', price_display: '',
       main_image: roomTwoImage,
       facilities: ['Free Wi-Fi', 'Air Conditioning', 'Balcony', 'Mini Bar'], gallery: [], is_active: 1, display_order: 2
+    },
+    {
+      id: 3, name: 'Room 03', description: 'A cozy and stylish stay with warm natural tones, serene comfort, and a peaceful atmosphere for a relaxing getaway.',
+      max_guests: 3, bed_type: 'King Bed', room_size: '40 sqm', room_view: 'Garden View', price_display: '',
+      main_image: roomThreeImage,
+      facilities: ['Free Wi-Fi', 'Air Conditioning', 'Private Balcony', 'Tea Station'], gallery: [], is_active: 1, display_order: 3
     },
   ],
 

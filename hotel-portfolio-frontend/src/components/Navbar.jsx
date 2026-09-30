@@ -34,7 +34,7 @@ export default function Navbar({ contactInfo }) {
         <Link to="/" className="flex items-center gap-3">
           <img src={hotelLogo} alt="Hotel logo" className="h-12 w-auto object-contain" />
           <span className={`font-serif text-xl font-bold tracking-wide ${solid ? 'text-charcoal-800' : 'text-white'}`}>
-            {contactInfo?.hotel_name ? contactInfo.hotel_name.replace(/\s+Hotel\b/gi, '').trim() : 'Serenity Grand'}
+            {contactInfo?.hotel_name ? contactInfo.hotel_name.replace(/\s+Hotel\b/gi, '').trim() : 'Mount Aureliya Homestay'}
           </span>
         </Link>
 

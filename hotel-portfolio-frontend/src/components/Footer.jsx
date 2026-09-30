@@ -11,7 +11,7 @@ export default function Footer({ contactInfo }) {
         <div>
           <div className="mb-3 flex items-center gap-3">
             <img src={hotelLogo} alt="Hotel logo" className="h-10 w-auto object-contain" />
-            <span className="font-serif text-lg font-bold text-white">{contactInfo?.hotel_name ? contactInfo.hotel_name.replace(/\s+Hotel\b/gi, '').trim() : 'Serenity Grand'}</span>
+            <span className="font-serif text-lg font-bold text-white">{contactInfo?.hotel_name ? contactInfo.hotel_name.replace(/\s+Hotel\b/gi, '').trim() : 'Mount Aureliya Homestay'}</span>
           </div>
           <p className="text-sm text-charcoal-300">{contactInfo?.tagline || 'Where Comfort Meets Elegance'}</p>
           <div className="mt-4 flex gap-3">
@@ -64,7 +64,7 @@ export default function Footer({ contactInfo }) {
         </div>
       </div>
       <div className="border-t border-charcoal-700 py-5 text-center text-xs text-charcoal-400">
-        © {year} {contactInfo?.hotel_name || 'Serenity Grand Hotel'}. All rights reserved. &middot; <Link to="/admin/login" className="hover:text-gold-400">Admin</Link>
+        © {year} {contactInfo?.hotel_name || 'Mount Aureliya Homestay'}. All rights reserved. &middot; <Link to="/admin/login" className="hover:text-gold-400">Admin</Link>
       </div>
     </footer>
   );

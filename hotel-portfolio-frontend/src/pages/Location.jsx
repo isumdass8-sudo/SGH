@@ -36,7 +36,7 @@ export default function LocationPage() {
             {contactInfo?.distance_airport && (
               <div className="card p-6">
                 <h3 className="flex items-center gap-2 font-serif text-lg font-semibold text-charcoal-800">
-                  <Plane size={20} className="text-gold-500" /> From the Airport
+                  <Plane size={20} className="text-gold-500" /> Travel Time from Airport
                 </h3>
                 <p className="mt-2 text-sm text-charcoal-500">{contactInfo.distance_airport}</p>
               </div>
@@ -50,7 +50,7 @@ export default function LocationPage() {
         <div className="container-max mt-16">
           <h3 className="section-title mb-6 text-center">Nearby Attractions</h3>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {['Negombo Beach', 'Fish Market', 'Dutch Canal', 'St. Mary\'s Church'].map((place) => (
+            {['Temple of the Tooth', 'Kandy Lake', 'Royal Botanical Gardens', 'Bahirawakanda Temple'].map((place) => (
               <div key={place} className="card p-5 text-center text-sm font-medium text-charcoal-600">{place}</div>
             ))}
           </div>
