@@ -39,6 +39,21 @@ function loadDB() {
         db.gallery = JSON.parse(JSON.stringify(seedData.gallery));
         changed = true;
       }
+      if (Array.isArray(db.gallery)) {
+        const missingGalleryImages = seedData.gallery.filter((image) =>
+          image.id > 3 && image.image_url && !db.gallery.some((existing) => existing.image_url === image.image_url)
+        );
+        if (missingGalleryImages.length) {
+          const nextId = Math.max(db.counters?.gallery || 0, ...db.gallery.map((image) => Number(image.id) || 0)) + 1;
+          db.gallery.push(...missingGalleryImages.map((image, index) => ({
+            ...image,
+            id: nextId + index,
+            display_order: db.gallery.length + index + 1
+          })));
+          db.counters.gallery = nextId + missingGalleryImages.length;
+          changed = true;
+        }
+      }
       const legacyRoomNames = new Set(['Deluxe Room', 'Superior Room', 'Family Room', 'Executive Suite']);
       const legacyRoomImages = new Set([
         'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1200',

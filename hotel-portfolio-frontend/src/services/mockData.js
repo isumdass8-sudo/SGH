@@ -4,6 +4,9 @@
 import galleryPhoto1 from '../assets/1.jpeg';
 import galleryPhoto2 from '../assets/2.jpeg';
 import galleryPhoto3 from '../assets/3.jpeg';
+import galleryPhoto4 from '../assets/4.jpg';
+import galleryPhoto5 from '../assets/5.PNG?url';
+import galleryPhoto6 from '../assets/6.png';
 import roomOneImage from '../assets/om 1.jpeg';
 import roomTwoImage from '../assets/om 2.jpeg';
 import roomThreeImage from '../assets/om 3.jpeg';
@@ -63,7 +66,10 @@ export const seedData = {
   gallery: [
     { id: 1, image_url: galleryPhoto1, category: 'hotel', caption: 'Hotel Photo 1', display_order: 1 },
     { id: 2, image_url: galleryPhoto2, category: 'hotel', caption: 'Hotel Photo 2', display_order: 2 },
-    { id: 3, image_url: galleryPhoto3, category: 'hotel', caption: 'Hotel Photo 3', display_order: 3 }
+    { id: 3, image_url: galleryPhoto3, category: 'hotel', caption: 'Hotel Photo 3', display_order: 3 },
+    { id: 4, image_url: galleryPhoto4, category: 'hotel', caption: 'Hotel Photo 4', display_order: 4 },
+    { id: 5, image_url: galleryPhoto5, category: 'hotel', caption: 'Hotel Photo 5', display_order: 5 },
+    { id: 6, image_url: galleryPhoto6, category: 'hotel', caption: 'Hotel Photo 6', display_order: 6 }
   ],
 
   events: [

@@ -11,7 +11,7 @@ export default function LocationPage() {
   return (
     <div>
       <section className="relative flex h-[40vh] min-h-[280px] items-center justify-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1600" alt="Location" className="absolute inset-0 h-full w-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1661928684586-eab4463502be?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Location" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-charcoal-900/60" />
         <div className="relative z-10 text-center text-white">
           <p className="section-eyebrow text-gold-300">Find Us</p>

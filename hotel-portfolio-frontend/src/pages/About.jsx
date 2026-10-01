@@ -1,6 +1,7 @@
 import { useOutletContext } from 'react-router-dom';
 import { Building2, Users, Sparkles, Award } from 'lucide-react';
 import aboutImage from '../assets/r1.png';
+import aboutHeroImage from '../assets/bg 1.png';
 
 const STATS = [
   { icon: Building2, label: 'Rooms & Suites', value: '48' },
@@ -14,7 +15,7 @@ export default function About() {
   return (
     <div>
       <section className="relative flex h-[45vh] min-h-[320px] items-center justify-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600" alt="About hotel" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={aboutHeroImage} alt="About hotel" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-charcoal-900/60" />
         <div className="relative z-10 text-center text-white">
           <p className="section-eyebrow text-gold-300">About Us</p>
